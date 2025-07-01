@@ -1,0 +1,32 @@
+{
+  "footer": {
+    "products": "Produits",
+    "solutions": "Solutions",
+    "resources": "Ressources",
+    "company": "Compagnie",
+    "links": {
+      "formation": "Formation",
+      "uiux": "Design UI/UX",
+      "software": "Développement Logiciel",
+      "db": "Gestion de Base de Donnée",
+      "social": "Gestion de Réseaux Sociaux",
+      "consulting": "Consulting",
+      "student": "Étudiant",
+      "business": "Entreprises",
+      "entrepreneur": "Entrepreneurs",
+      "institution": "Institution",
+      "employee": "Salarié",
+      "guide": "Guide",
+      "blog": "Blog",
+      "project": "Projet",
+      "doc": "Documentation",
+      "contact": "Contact",
+      "about": "À propos de nous",
+      "career": "Carrière",
+      "partner": "Devenir Partenaire",
+      "legal": "Mentions légales",
+      "privacy": "Politique de confidentialité"
+    },
+    "copyright": "© {year} ēdev. Tous droits réservés."
+  }
+}
