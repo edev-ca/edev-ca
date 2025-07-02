@@ -25,7 +25,7 @@ const page = () => {
           Nos formations vont au-delà des compétences techniques : elles cultivent innovation, collaboration et responsabilité.
         </p>
 
-        <button onClick={handleScroll} className="inline-flex items-center mt-6 sm:mt-10 md:mt-20 text-blue-800 p-3 sm:p-4 text-sm sm:text-lg">
+        <button onClick={handleScroll} className="inline-flex items-center mt-10 sm:mt-10 md:mt-20 text-blue-800 p-3 sm:p-4 text-sm sm:text-lg">
           <FaArrowDown className="mr-2 h-4 w-4" /> En Savoir Plus
         </button>
       </div>
@@ -35,7 +35,7 @@ const page = () => {
         <h2 className='text-lg xs:text-xl sm:text-2xl md:text-3xl text-slate-800 font-light mt-10 sm:mt-20 md:mt-40 ml-0 sm:ml-4 md:ml-20'>
           Découvrez le catalogue
         </h2>
-        <div className='flex flex-col md:flex-row items-center justify-center gap-4 md:gap-4 mb-8 sm:mb-10'>
+        <div className='flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 mb-8 sm:mb-10'>
           <Catalogue 
             title="Développement Web"  
             description="Maîtrisez le développement d'applications web et mobiles. De l’architecture aux interactions dynamiques avec JavaScript ou React, vous apprendrez à construire des solutions complètes adaptées aux besoins réels." 
@@ -71,7 +71,7 @@ const page = () => {
           />
         </div>
         <h2 className='text-lg xs:text-xl sm:text-2xl md:text-3xl text-slate-800 font-light mt-6 sm:mt-10 md:mt-10 ml-0 sm:ml-4 md:ml-20'>
-          La Mission
+          La vision
         </h2>
         <p className="text-slate-900 text-sm xs:text-base sm:text-lg max-w-full sm:max-w-2xl text-left mt-4 sm:mt-8 ml-0 sm:ml-4 md:ml-20">
           Nous croyons que la formation est la clé pour libérer le potentiel de nos communautés. 
