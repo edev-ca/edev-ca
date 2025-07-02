@@ -13,7 +13,7 @@ interface CardProps {
 const Card = ({ image, title, description, lien, alt }: CardProps) => {
     return (
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden max-w-full mx-auto flex flex-col md:flex-row">
-            <div className="relative w-full md:w-1/2 min-h-[350px] md:min-h-[280px]">
+            <div className="relative w-full md:w-1/2 min-h-[220px] md:min-h-[280px]">
                 <Image
                     src={image}
                     alt={alt}
@@ -23,17 +23,19 @@ const Card = ({ image, title, description, lien, alt }: CardProps) => {
                     priority
                 />
             </div>
-            <div className="flex flex-col justify-center gap-4 p-6 md:p-8 w-full md:w-1/2">
-                <h3 className="text-xl font-bold text-slate-800"><span className="text-green-700 font-bold">ēdev </span>|{title}</h3>
-                <p className="text-gray-800 text-base md:text-lg leading-relaxed">
+            <div className="flex flex-col justify-center gap-3 p-4 md:p-8 w-full md:w-1/2">
+                <h3 className="text-lg md:text-xl font-bold text-slate-800">
+                    <span className="text-green-700 font-bold">ēdev </span>| {title}
+                </h3>
+                <p className="text-sm md:text-base text-gray-800 leading-relaxed">
                     {description}
                 </p>
                 <hr className="border-gray-300 w-full" />
                 <Link
                     href={lien}
-                    className="text-slate-600 flex justify-between space-x-90 text-sm md:text-base font-bold self-start gap-2"
+                    className="text-slate-600 flex items-center text-sm md:text-base font-bold self-start gap-2"
                 >
-                    <p>Visitez</p>
+                    <span>Visitez</span>
                     <FaArrowRight />
                 </Link>
             </div>
