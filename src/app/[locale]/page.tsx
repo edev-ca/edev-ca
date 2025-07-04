@@ -1,10 +1,13 @@
 'use client'
 
+
 import Image from 'next/image'
 import { FaArrowDown } from "react-icons/fa6";
 import ValueCard from "./components/valueCard";
 import Card from './components/card';
 import { useRef } from 'react';
+import Partenaires from './components/partenar';
+import partners from '../[locale]/contant/index'
 
 export default function HomePage() {
   const fondementsRef = useRef<HTMLDivElement | null>(null);
@@ -18,7 +21,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-gradient-to-br bg-gray-50 p-2 sm:p-4 md:p-8 flex flex-col gap-16 sm:gap-20 md:gap-24">
 
-      <div className="hidden md:block absolute top-60 left-150 w-[300px] sm:w-[500px] md:w-[700px] h-full md:h-96 opacity-25 z-0 ">
+      <div className="hidden md:block absolute top-55 left-150 w-[300px] sm:w-[500px] md:w-[700px] h-full md:h-96 opacity-25 z-0 ">
         <Image
           src="/images/map.png"
           alt="Background decorative"
@@ -76,11 +79,11 @@ export default function HomePage() {
       </div>
 
       {/* Services Section */}
-      <div className="mt-0 grid grid-cols-1 gap-8 sm:gap-12 m-2 sm:m-6 md:m-10 ml-2 sm:ml-5">
+      <div className="mt-0 grid grid-cols-1 gap-10 sm:gap-12 m-2 sm:m-6 md:m-10 ml-2 sm:ml-5">
         <Card
           image="/images/formation.jpg"
           description="À travers des programmes pratiques, accessibles et ancrés dans la réalité locale, nous accompagnons l’émergence d’une nouvelle génération d’acteurs du numérique, outillés pour concevoir des solutions innovantes, porter le changement et contribuer activement à la transformation digitale de leur communauté."
-          lien="https://edev-ca.com"
+          lien="/formation"
           title="formation"
           alt="Formation"
         />
@@ -88,7 +91,7 @@ export default function HomePage() {
         <Card
           image="/images/accompagnement.jpg"
           description="Nous offrons un accompagnement digital personnalisé, conçu pour aider les organisations à réussir leur transition numérique. De l’audit de leurs besoins jusqu’à la mise en œuvre de solutions concrètes, nous les guidons pas à pas vers une transformation efficace, durable et adaptée à leurs réalités, en mettant l’humain et l’impact au cœur de chaque démarche."
-          lien="https://edev-ca.com"
+          lien="https://edev-ca.com/services"
           title="Accompagnement Digital"
           alt="Accompagnement"
         />
@@ -96,7 +99,7 @@ export default function HomePage() {
         <Card
           image="/images/conseil.jpg"
           description="Un accompagnement stratégique pour les structures en quête de transformation numérique. Grâce à une approche sur mesure, des diagnostics précis et une compréhension fine des réalités locales, nous identifions les leviers d’innovation, optimisons les processus et co-construisons des solutions durables à fort impact social et économique."
-          lien="https://edev-ca.com"
+          lien="https://edev-ca.com/services"
           title="Consulting"
           alt="Consulting"
         />
@@ -109,14 +112,9 @@ export default function HomePage() {
           alt="Développement Web"
         />
       </div>
-      <hr className='border-t border-gray-200 my-8 sm:my-10'/>
+      <hr className='border-t border-gray-200 my-5 sm:my-10'/>
       {/* Partenaires Section */}
-      <div className="mt-10 sm:mt-20 text-center mb-6 sm:mb-10">
-        <h2 className="text-lg sm:text-2xl font-light text-slate-800 mb-4 sm:mb-8">Nos Partenaires Stratégiques</h2>
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-8 items-center">
-          {/*logo*/}
-        </div>
-      </div>
+      <Partenaires partenaires={partners} />
     </main>
   );
 }

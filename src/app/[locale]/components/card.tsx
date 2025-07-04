@@ -13,7 +13,7 @@ interface CardProps {
 const Card = ({ image, title, description, lien, alt }: CardProps) => {
     return (
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden max-w-full mx-auto flex flex-col md:flex-row">
-            <div className="relative w-full md:w-1/2 min-h-[220px] md:min-h-[280px]">
+            <div className="relative w-full md:w-1/2 min-h-[400px] md:min-h-[280px]">
                 <Image
                     src={image}
                     alt={alt}

@@ -113,8 +113,7 @@ export default function Navbar() {
             </Link>
             <Link
               href="/contact"
-              aria-disabled="true"
-              className={`bg-blue-600 text-white px-4 py-2 rounded pointer-events-none cursor-not-allowed ${isActive('/contact') ? 'ring-2 ring-blue-600' : ''}`}
+              className={`bg-blue-600 text-white px-4 py-2 rounded  ${isActive('/contact') ? 'ring-2 ring-blue-600' : ''}`}
             >
               Contactez-nous
             </Link>
