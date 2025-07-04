@@ -50,8 +50,9 @@ export async function POST(request: NextRequest) {
     `
 
     const mailOptions: Mail.Options = {
-      from: `"Contact ēdev" <${email}>`,
+      from: `"Contact ēdev" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_USER,
+      replyTo: email,
       subject: `Message de ${fullName}`,
       text: message,
       html: htmlMessage
