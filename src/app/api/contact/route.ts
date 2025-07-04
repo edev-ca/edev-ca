@@ -15,7 +15,7 @@ const contactSchema = z.object({
 })
 
 export async function POST(request: NextRequest) {
-  
+
     const body = await request.json()
     const result = contactSchema.safeParse(body)
 
