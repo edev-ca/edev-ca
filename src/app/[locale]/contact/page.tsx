@@ -5,6 +5,8 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 const contactSchema = z.object({
   firstname: z.string().min(2, 'Prénom requis'),
@@ -28,6 +30,7 @@ enum Step {
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [step, setStep] = useState<Step>(Step.Info);
+  const router = useRouter();
 
   const {
     register,
@@ -44,6 +47,17 @@ export default function ContactPage() {
     });
     if (res.ok) setSubmitted(true);
   };
+
+  useEffect(() => {
+  if (submitted) {
+    const timer = setTimeout(() => {
+      router.push('/');
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }
+}, [submitted, router]);
+
 
   return (
     <div className="min-h-screen bg-gradient-to-r bg-gray-50 px-4 py-10 flex flex-col items-center justify-center">
