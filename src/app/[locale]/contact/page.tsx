@@ -204,7 +204,7 @@ export default function ContactPage() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="bg-white p-8 rounded-xl shadow-lg text-center text-green-600 font-semibold text-xl"
+            className="bg-white p-8 rounded-xl shadow-lg text-center text-green-600 font-light text-xl"
           >
             Merci pour votre message ! Nous vous répondrons très bientôt.
           </motion.div>
