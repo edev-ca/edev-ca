@@ -17,7 +17,7 @@ const page = () => {
   }
 
   return (
-    <div className="bg-gradient-to-br bg-gray-50 to-white  min-h-screen">
+    <div className="bg-gradient-to-br bg-gray-50 p-2  min-h-screen">
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0, y: -20 }}
@@ -52,7 +52,7 @@ const page = () => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl text-slate-800 font-light text-center mb-8">
           Découvrez le catalogue
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {[...Array(6)].map((_, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.2 }}>
               {[

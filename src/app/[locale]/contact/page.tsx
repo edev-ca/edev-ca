@@ -37,7 +37,7 @@ export default function ContactPage() {
   } = useForm<ContactForm>({ resolver: zodResolver(contactSchema) });
 
   const onSubmit = async (data: ContactForm) => {
-    const res = await fetch('../api/contact', {
+    const res = await fetch('/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
@@ -46,7 +46,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 px-4 py-10 flex flex-col items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-r bg-gray-50 px-4 py-10 flex flex-col items-center justify-center">
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
