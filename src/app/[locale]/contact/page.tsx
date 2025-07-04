@@ -156,7 +156,7 @@ export default function ContactPage() {
                   <textarea
                     rows={5}
                     {...register('message')}
-                    className="mt-1 w-full px-4 py-2 border border-gray-300 text-slate-500 rounded-lg shadow-sm"
+                    className="mt-1 w-full px-4 py-2 border border-gray-300 text-slate-600 rounded-lg shadow-sm"
                   ></textarea>
                   {errors.message && <p className="text-sm text-red-500 mt-1">{errors.message.message}</p>}
                 </div>
