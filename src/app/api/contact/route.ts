@@ -1,9 +1,9 @@
 // app/api/contact/route.ts
-import { NextResponse } from 'next/server'
+import {type NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 import nodemailer from 'nodemailer'
+import Mail from 'nodemailer/lib/mailer'
 
-// 🧪 Schéma de validation des données avec Zod
 const contactSchema = z.object({
   firstname: z.string(),
   lastname: z.string(),
@@ -14,9 +14,9 @@ const contactSchema = z.object({
   message: z.string()
 })
 
-export async function POST(req: Request) {
-  try {
-    const body = await req.json()
+export async function POST(request: NextRequest) {
+  
+    const body = await request.json()
     const result = contactSchema.safeParse(body)
 
     if (!result.success) {
@@ -29,14 +29,15 @@ export async function POST(req: Request) {
     // Configuration du transporteur Nodemailer
     const transporter = nodemailer.createTransport({
       service: 'gmail',
+     /* host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
+      */
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS
       }
-    })
-
-    //  Vérifie la configuration SMTP (optionnel mais utile en dev)
-    await transporter.verify()
+    });
 
     // Contenu HTML de l’email
     const htmlMessage = `
@@ -48,18 +49,32 @@ export async function POST(req: Request) {
       <p><strong>Détails :</strong><br/>${message}</p>
     `
 
-    // Envoi de l’email
-    await transporter.sendMail({
+    const mailOptions: Mail.Options = {
       from: `"Contact ēdev" <${email}>`,
       to: process.env.EMAIL_USER,
       subject: `Message de ${fullName}`,
       text: message,
       html: htmlMessage
-    })
+    };
 
-    return NextResponse.json({ success: true })
-  } catch (err) {
-    console.error('Erreur dans /api/contact:', err)
-    return NextResponse.json({ error: 'Erreur interne du serveur' }, { status: 500 })
-  }
+    const sendMailPromise = () => {
+      new Promise<string>((resolve, reject) => {
+        transporter.sendMail(mailOptions, function(err){
+          if(!err){
+            resolve('Email sent');
+          }else {
+            reject(err.message)
+          }
+        });
+      });
+    }
+
+    try{
+      await sendMailPromise();
+      return NextResponse.json({message : 'Email sent'})
+    }
+    catch (err){
+      return NextResponse.json({error : err}, {status: 500})
+    }
+
 }

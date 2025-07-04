@@ -51,7 +51,7 @@ export default function ContactPage() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-3xl sm:text-5xl font-bold text-slate-800 text-center mb-12"
+        className="text-xl sm:text-5xl py-2 font-light text-slate-800 text-center mb-12"
       >
         Discutons de votre prochain <br /> projet digital
       </motion.h1>
@@ -75,7 +75,7 @@ export default function ContactPage() {
                   <input
                     type="text"
                     {...register('firstname')}
-                    className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm"
+                    className="mt-1 w-full px-4 py-2 border border-slate-500 rounded-lg shadow-sm"
                   />
                   {errors.firstname && <p className="text-sm text-red-500 mt-1">{errors.firstname.message}</p>}
                 </div>
@@ -84,7 +84,7 @@ export default function ContactPage() {
                   <input
                     type="text"
                     {...register('lastname')}
-                    className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm"
+                    className="mt-1 w-full px-4 py-2 border border-gray-300 text-slate-500 rounded-lg shadow-sm"
                   />
                   {errors.lastname && <p className="text-sm text-red-500 mt-1">{errors.lastname.message}</p>}
                 </div>
@@ -93,7 +93,7 @@ export default function ContactPage() {
                   <input
                     type="email"
                     {...register('email')}
-                    className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm"
+                    className="mt-1 w-full px-4 py-2 border border-gray-300 text-slate-500 rounded-lg shadow-sm"
                   />
                   {errors.email && <p className="text-sm text-red-500 mt-1">{errors.email.message}</p>}
                 </div>
@@ -117,7 +117,7 @@ export default function ContactPage() {
                   <input
                     type="text"
                     {...register('phone')}
-                    className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm"
+                    className="mt-1 w-full px-4 py-2 border border-gray-300 text-slate-500 rounded-lg shadow-sm"
                   />
                 </div>
                 <div>
@@ -125,7 +125,7 @@ export default function ContactPage() {
                   <input
                     type="text"
                     {...register('company')}
-                    className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm"
+                    className="mt-1 w-full px-4 py-2 border border-gray-300 text-slate-500 rounded-lg shadow-sm"
                   />
                 </div>
                 <div>
@@ -133,7 +133,7 @@ export default function ContactPage() {
                   <input
                     type="text"
                     {...register('projectType')}
-                    className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm"
+                    className="mt-1 w-full px-4 py-2 border border-gray-300 text-slate-500 rounded-lg shadow-sm"
                   />
                   {errors.projectType && <p className="text-sm text-red-500 mt-1">{errors.projectType.message}</p>}
                 </div>
@@ -142,7 +142,7 @@ export default function ContactPage() {
                   <textarea
                     rows={5}
                     {...register('message')}
-                    className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm"
+                    className="mt-1 w-full px-4 py-2 border border-gray-300 text-slate-500 rounded-lg shadow-sm"
                   ></textarea>
                   {errors.message && <p className="text-sm text-red-500 mt-1">{errors.message.message}</p>}
                 </div>
