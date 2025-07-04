@@ -69,7 +69,8 @@ export async function POST(request: NextRequest) {
         });
       });
     }
-
+      await transporter.verify(); 
+      
     try{
       await sendMailPromise();
       return NextResponse.json({message : 'Email sent'})
