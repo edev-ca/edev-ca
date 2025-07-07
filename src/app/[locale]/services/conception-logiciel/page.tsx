@@ -3,12 +3,13 @@
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import { FaHandshakeAngle } from "react-icons/fa6";
 
 export default function Page() {
   return (
     <div className="bg-gray-50 text-slate-800">
       {/* Hero */}
-      <section className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white to-blue-50">
+      <section className="py-20 px-6 md:px-12 lg:px-24 bg-gray-50">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -85,14 +86,9 @@ export default function Page() {
 
       {/* Call to action */}
       <section className=" text-slate-700 font-light py-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Vous avez une idée de logiciel ?</h2>
-        <p className="mb-8 text-lg">Nous vous aidons à la concrétiser avec des outils fiables, performants et adaptés à vos besoins.</p>
-        <Link
-          href="/contact"
-          className="inline-block bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition"
-        >
-          Contactez notre équipe
-        </Link>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Faites vivre vos idées</h2>
+        <p className="mb-8 text-lg">Nous vous aidons à les concrétiser avec des outils fiables, performants et adaptés à vos besoins.</p>
+       <p className="flex justify-center"><FaHandshakeAngle className="text-gray-600 h-50 w-50"/></p>
       </section>
     </div>
   )

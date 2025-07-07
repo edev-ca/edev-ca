@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import { LiaCertificateSolid } from "react-icons/lia";
 
 export default function Page() {
   return (
@@ -84,14 +85,9 @@ export default function Page() {
       </section>
       {/* CTA */}
       <section className=" text-slate-700 font-light py-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Envie de faire passer votre structure au digital ?</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4"> Passer votre structure au digital </h2>
         <p className="mb-8 text-lg">Nous sommes prêts à vous guider, à votre rythme et selon vos priorités.</p>
-        <Link
-          href="/contact"
-          className="inline-block bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition"
-        >
-          Discuter avec un conseiller
-        </Link>
+        <p className="flex justify-center"><LiaCertificateSolid className="text-gray-600 h-50 w-50 flex"/></p>
       </section>
     </div>
   )
