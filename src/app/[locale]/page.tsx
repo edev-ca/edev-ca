@@ -9,8 +9,11 @@ import { useRef } from 'react';
 import Partenaires from './components/partenar';
 import partners from '../[locale]/contant/index'
 
+
+
 export default function HomePage() {
   const fondementsRef = useRef<HTMLDivElement | null>(null);
+
 
   const handleScroll = () => {
     if (fondementsRef.current) {
@@ -91,7 +94,7 @@ export default function HomePage() {
         <Card
           image="/images/accompagnement.jpg"
           description="Nous offrons un accompagnement digital personnalisé, conçu pour aider les organisations à réussir leur transition numérique. De l’audit de leurs besoins jusqu’à la mise en œuvre de solutions concrètes, nous les guidons pas à pas vers une transformation efficace, durable et adaptée à leurs réalités, en mettant l’humain et l’impact au cœur de chaque démarche."
-          lien="https://edev-ca.com/services"
+          lien="/services/accompagnement-digital"
           title="Accompagnement Digital"
           alt="Accompagnement"
         />
@@ -99,7 +102,7 @@ export default function HomePage() {
         <Card
           image="/images/conseil.jpg"
           description="Un accompagnement stratégique pour les structures en quête de transformation numérique. Grâce à une approche sur mesure, des diagnostics précis et une compréhension fine des réalités locales, nous identifions les leviers d’innovation, optimisons les processus et co-construisons des solutions durables à fort impact social et économique."
-          lien="https://edev-ca.com/services"
+          lien="/services/consulting"
           title="Consulting"
           alt="Consulting"
         />
@@ -107,7 +110,7 @@ export default function HomePage() {
         <Card
           image="/images/elearning.jpg"
           description="Nous concevons des solutions digitales innovantes, durables et ancrées dans la réalité locale, qui répondent aux besoins concrets des communautés. Grâce à une approche centrée utilisateur, nous transformons les défis quotidiens en opportunités numériques, en créant des applications web et mobiles, des plateformes sur mesure et des outils intelligents capables d’impacter positivement l’éducation, la santé, l’économie et bien plus encore."
-          lien="https://edev-ca.com"
+          lien="/services/conception-logiciel"
           title="Développement des solutions digitales"
           alt="Développement Web"
         />

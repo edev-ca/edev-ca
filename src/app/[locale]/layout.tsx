@@ -29,7 +29,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "edev – Solutions numériques pour un impact local",
   description: "ēdev est une startup technologique qui développe des solutions digitales sur mesure pour répondre aux besoins réels des communautés en Afrique centrale",
-  icons:'/images/edev.webp'
+  icons:'/images/edev.webp',
+  keywords: ["numerique", "startup technologique", "Centrafrique", "Développement", "formation"]
 };
 
 export default async function LocalLayout({
