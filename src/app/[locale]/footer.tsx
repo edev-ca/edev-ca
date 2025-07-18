@@ -29,7 +29,7 @@ function Footer() {
         {/* Center: Links */}
         <div className="flex flex-1 justify-center gap-12">
           <div>
-            <h3 className="text-xl font-semibold text-slate-800 mb-3">{t("products")}</h3>
+            <h3 className="text-xl font-semibold text-slate-800 mb-3">{t("produits")}</h3>
             <ul className="space-y-2 text-slate-700 text-base">
               <li><Link href="/formation">{t("links.formation")}</Link></li>
               <li><Link href="/services">{t("links.uiux")}</Link></li>
@@ -42,11 +42,11 @@ function Footer() {
           <div>
             <h3 className="text-xl font-semibold text-slate-800 mb-3">{t("solutions")}</h3>
             <ul className="space-y-2 text-slate-700 text-base">
-              <li><Link href="/formation">{t("links.student")}</Link></li>
+              <li><Link href="/formation">{t("links.etudiant")}</Link></li>
               <li><a href="#">{t("links.business")}</a></li>
               <li><a href="#">{t("links.entrepreneur")}</a></li>
               <li><a href="#">{t("links.institution")}</a></li>
-              <li><a href="#">{t("links.employee")}</a></li>
+              <li><a href="#">{t("links.salarié")}</a></li>
             </ul>
           </div>
         </div>
@@ -54,21 +54,21 @@ function Footer() {
         {/* Right: Ressources & Company */}
         <div className="flex flex-1 justify-center gap-12">
           <div>
-            <h3 className="text-xl font-semibold text-slate-800 mb-3">{t("resources")}</h3>
+            <h3 className="text-xl font-semibold text-slate-800 mb-3">{t("ressources")}</h3>
             <ul className="space-y-2 text-slate-700 text-base">
               <li><a href="#">{t("links.guide")}</a></li>
               <li><Link href="/blog">{t("links.blog")}</Link></li>
-              <li><Link href="/projet">{t("links.project")}</Link></li>
+              <li><Link href="/projet">{t("links.projet")}</Link></li>
               <li><a href="#">{t("links.doc")}</a></li>
               <li><Link href="/contact">{t("links.contact")}</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-semibold text-slate-800 mb-3">{t("company")}</h3>
+            <h3 className="text-xl font-semibold text-slate-800 mb-3">{t("compagnie")}</h3>
             <ul className="space-y-2 text-slate-700 text-base">
               <li><Link href="/about">{t("links.about")}</Link></li>
-              <li><a href="#">{t("links.career")}</a></li>
-              <li><Link href="/contact">{t("links.partner")}</Link></li>
+              <li><a href="#">{t("links.Carrière")}</a></li>
+              <li><Link href="/contact">{t("links.partenaire")}</Link></li>
               <li><Link href="#">{t("links.legal")}</Link></li>
               <li><a href="#">{t("links.privacy")}</a></li>
             </ul>

@@ -1,32 +1,80 @@
 {
   "footer": {
-    "products": "Produits",
+    "produits": "Products",
     "solutions": "Solutions",
-    "resources": "Ressources",
-    "company": "Compagnie",
+    "ressources": "Resources",
+    "compagnie": "Company",
     "links": {
-      "formation": "Formation",
-      "uiux": "Design UI/UX",
-      "software": "Développement Logiciel",
-      "db": "Gestion de Base de Donnée",
-      "social": "Gestion de Réseaux Sociaux",
+      "formation": "Training",
+      "uiux": "UI/UX Design",
+      "software": "Software",
+      "db": "Database",
+      "social": "Social Media",
       "consulting": "Consulting",
-      "student": "Étudiant",
-      "business": "Entreprises",
+      "etudiant": "Student",
+      "business": "Business",
       "entrepreneur": "Entrepreneurs",
       "institution": "Institution",
-      "employee": "Salarié",
+      "salarié": "Employee",
       "guide": "Guide",
       "blog": "Blog",
-      "project": "Projet",
+      "projet": "Project",
       "doc": "Documentation",
       "contact": "Contact",
-      "about": "À propos de nous",
-      "career": "Carrière",
-      "partner": "Devenir Partenaire",
-      "legal": "Mentions légales",
-      "privacy": "Politique de confidentialité"
+      "about": "About",
+      "Carrière": "Career",
+      "partenaire": "Partner",
+      "legal": "Legal",
+      "privacy": "Privacy"
     },
-    "copyright": "© {year} ēdev. Tous droits réservés."
+    "copyright": "© {year} ēdev. All rights reserved."
+  },
+
+  "navbar": {
+    "formation": "Training",
+    "services": "Services",
+    "about": "About",
+    "projet": "Project",
+    "contactez-nous": "Contact Us"
+  },
+
+  "homepage": {
+    "hero": {
+      "title1": "Digital",
+      "title2": "Technology",
+      "title3": "Serving Development",
+      "description": "We are a committed tech startup that designs innovative and tailor-made digital solutions to accelerate the social, economic, and human impact of communities in Central Africa.",
+      "button": "Learn More"
+    },
+    "fondements": {
+      "title": "Our Foundations",
+      "items": [
+        "Digital Transformation",
+        "Training",
+        "Digital Inclusion"
+      ],
+      "description": "Driven by Digital Transformation, Training, and Digital Inclusion, we are building a future where technology becomes a tool for empowerment for all."
+    },
+    "solutions": {
+      "title": "Our Solutions",
+      "cards": [
+        {
+          "title": "Training",
+          "description": "Through practical, accessible programs rooted in local realities, we support the emergence of a new generation of digital actors, equipped to design innovative solutions, drive change, and actively contribute to the digital transformation of their communities."
+        },
+        {
+          "title": "Digital Support",
+          "description": "We offer personalized digital support, designed to help organizations successfully transition into the digital world. From auditing their needs to implementing concrete solutions, we guide them step-by-step toward effective, sustainable transformation adapted to their realities — placing people and impact at the heart of every approach."
+        },
+        {
+          "title": "Consulting",
+          "description": "Strategic support for organizations seeking digital transformation. With a tailored approach, precise diagnostics, and a deep understanding of local realities, we identify innovation levers, optimize processes, and co-build sustainable solutions with strong social and economic impact."
+        },
+        {
+          "title": "Digital Solutions Development",
+          "description": "We design innovative, sustainable digital solutions rooted in local realities that meet the concrete needs of communities. Through a user-centered approach, we turn daily challenges into digital opportunities by creating web and mobile apps, custom platforms, and smart tools capable of positively impacting education, health, the economy, and more."
+        }
+      ]
+    }
   }
 }

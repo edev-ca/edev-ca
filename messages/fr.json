@@ -1,9 +1,9 @@
 {
   "footer": {
-    "products": "Produits",
+    "produits": "Produits",
     "solutions": "Solutions",
-    "resources": "Ressources",
-    "company": "Compagnie",
+    "ressources": "Ressources",
+    "compagnie": "Compagnie",
     "links": {
       "formation": "Formation",
       "uiux": "Design UI/UX",
@@ -11,22 +11,70 @@
       "db": "Gestion de Base de Donnée",
       "social": "Gestion de Réseaux Sociaux",
       "consulting": "Consulting",
-      "student": "Étudiant",
+      "etudiant": "Étudiant",
       "business": "Entreprises",
       "entrepreneur": "Entrepreneurs",
       "institution": "Institution",
-      "employee": "Salarié",
+      "salarié": "Salarié",
       "guide": "Guide",
       "blog": "Blog",
-      "project": "Projet",
+      "projet": "Projet",
       "doc": "Documentation",
       "contact": "Contact",
       "about": "À propos de nous",
-      "career": "Carrière",
-      "partner": "Devenir Partenaire",
+      "Carrière": "Carrière",
+      "partenaire": "Devenir Partenaire",
       "legal": "Mentions légales",
       "privacy": "Politique de confidentialité"
     },
     "copyright": "© {year} ēdev. Tous droits réservés."
+  },
+
+  "navbar": {
+    "formation": "Formation",
+    "services": "Services",
+    "about": "A propos",
+    "projet": "Projet",
+    "contactez-nous": "Contactez-nous"
+  },
+
+  "homepage": {
+    "hero": {
+      "title1": "Le",
+      "title2": "Numérique",
+      "title3": "au service du Développement",
+      "description": "Nous sommes une startup technologique engagée qui conçoit des solutions digitales innovantes et sur mesure, pour accélérer l'impact social, économique et humain des communautés en Afrique centrale.",
+      "button": "En Savoir Plus"
+    },
+    "fondements": {
+      "title": "Nos Fondements",
+      "items": [
+        "Transformation Digitale",
+        "Formation",
+        "Inclusion Numérique"
+      ],
+      "description": "Portés par la Transformation Digitale, la Formation et l’Inclusion Numérique, nous construisons un avenir où la technologie devient un levier d’émancipation pour tous."
+    },
+    "solutions": {
+      "title": "Nos Solutions",
+      "cards": [
+        {
+          "title": "Formation",
+          "description": "À travers des programmes pratiques, accessibles et ancrés dans la réalité locale, nous accompagnons l’émergence d’une nouvelle génération d’acteurs du numérique, outillés pour concevoir des solutions innovantes, porter le changement et contribuer activement à la transformation digitale de leur communauté."
+        },
+        {
+          "title": "Accompagnement Digital",
+          "description": "Nous offrons un accompagnement digital personnalisé, conçu pour aider les organisations à réussir leur transition numérique. De l’audit de leurs besoins jusqu’à la mise en œuvre de solutions concrètes, nous les guidons pas à pas vers une transformation efficace, durable et adaptée à leurs réalités, en mettant l’humain et l’impact au cœur de chaque démarche."
+        },
+        {
+          "title": "Consulting",
+          "description": "Un accompagnement stratégique pour les structures en quête de transformation numérique. Grâce à une approche sur mesure, des diagnostics précis et une compréhension fine des réalités locales, nous identifions les leviers d’innovation, optimisons les processus et co-construisons des solutions durables à fort impact social et économique."
+        },
+        {
+          "title": "Développement des solutions digitales",
+          "description": "Nous concevons des solutions digitales innovantes, durables et ancrées dans la réalité locale, qui répondent aux besoins concrets des communautés. Grâce à une approche centrée utilisateur, nous transformons les défis quotidiens en opportunités numériques, en créant des applications web et mobiles, des plateformes sur mesure et des outils intelligents capables d’impacter positivement l’éducation, la santé, l’économie et bien plus encore."
+        }
+      ]
+    }
   }
 }

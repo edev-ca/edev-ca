@@ -1,12 +1,15 @@
 
 'use client'
-import Link from "next/link"
+
 import Image from "next/image"
 import { useState } from "react"
 import { usePathname, useRouter } from "next/navigation"
 import logo from "../../../public/images/edev.webp" 
 import { motion, AnimatePresence } from 'framer-motion'
 import { FaChalkboardTeacher, FaCogs, FaUserTie, FaLaptopCode} from "react-icons/fa"
+import {Link} from '@/i18n/navigation';
+import { useTranslations } from "next-intl";
+
 
 
 const services = [
@@ -41,6 +44,7 @@ export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false)
   const pathname = usePathname()
   const router = useRouter()
+  const t = useTranslations("navbar");
 
   const currentLocale = pathname.split('/')[1] === 'fr' ? 'fr' : 'en'
   const otherLocale = currentLocale === 'fr' ? 'en' : 'fr'
@@ -96,7 +100,7 @@ export default function Navbar() {
         {/* Desktop menu */}
         <ul className="hidden md:flex space-x-6 text-slate-700 text-lg items-center">
           <li>
-            <Link href="/formation" className={`hover:text-slate-900 ${isActive('/formation') ? 'text-blue-600' : ''}`}>Formation</Link>
+            <Link href="/formation" className={`hover:text-slate-900 ${isActive('/formation') ? 'text-blue-600' : ''}`}>{t('formation')}</Link>
           </li>
 
           {/* Dropdown Services */}
@@ -105,7 +109,7 @@ export default function Navbar() {
               onClick={() => setServicesOpen(!servicesOpen)}
               className="hover:text-slate-900 font-medium flex items-center gap-1 focus:outline-none"
             >
-              Services
+              {t('services')}
               <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
@@ -148,16 +152,16 @@ export default function Navbar() {
           </li>
 
           <li>
-            <Link href="/projet" aria-disabled="true" className="text-gray-400 pointer-events-none cursor-not-allowed">Projet</Link>
+            <Link href="/projet" aria-disabled="true" className="text-gray-400 pointer-events-none cursor-not-allowed">{t('projet')}</Link>
           </li>
           <li>
-            <Link href="/about" aria-disabled="true" className="text-gray-400 pointer-events-none cursor-not-allowed">A propos</Link>
+            <Link href="/about" aria-disabled="true" className="text-gray-400 pointer-events-none cursor-not-allowed">{t('about')}</Link>
           </li>
         </ul>
 
         {/* Right block */}
         <div className="hidden md:flex items-center space-x-4 text-lg">
-          <Link href="/contact" className={`bg-blue-600 text-white px-4 py-2 rounded ${isActive('/contact') ? 'ring-2 ring-blue-600' : ''}`}>Contactez-nous</Link>
+          <Link href="/contact" className={`bg-blue-600 text-white px-4 py-2 rounded ${isActive('/contact') ? 'ring-2 ring-blue-600' : ''}`}>{t('contactez-nous')}</Link>
           <button
             onClick={handleLocaleSwitch}
             className="ml-2 px-3 py-1 border border-slate-400 rounded text-slate-700 hover:bg-slate-100"
@@ -172,11 +176,11 @@ export default function Navbar() {
       {menuOpen && (
         <div className="md:hidden flex flex-col items-center mt-4 text-lg">
           <ul className="flex flex-col space-y-2 text-slate-700 w-full">
-            <li><Link href="/formation" onClick={() => setMenuOpen(false)}>Formation</Link></li>
+            <li><Link href="/formation" onClick={() => setMenuOpen(false)}>{t('formation')}</Link></li>
 
             {/* Mobile services dropdown */}
             <details className="w-full">
-              <summary className="cursor-pointer py-2 px-4 text-left w-full">Services</summary>
+              <summary className="cursor-pointer py-2 px-4 text-left w-full">{t('services')}</summary>
               <ul className="px-4 py-2">
                 {services.map((service) => (
                   <li key={service.title}>
@@ -194,9 +198,9 @@ export default function Navbar() {
               </ul>
             </details>
 
-            <li><Link href="/projet" className="pointer-events-none text-gray-400">Projet</Link></li>
-            <li><Link href="/about" className="pointer-events-none text-gray-400">A propos</Link></li>
-            <li><Link href="/contact" className="bg-blue-600 text-white px-4 py-2 rounded text-center">Contactez-nous</Link></li>
+            <li><Link href="/projet" className="pointer-events-none text-gray-400">{t('projet')}</Link></li>
+            <li><Link href="/about" className="pointer-events-none text-gray-400">{t('about')}</Link></li>
+            <li><Link href="/contact" className="bg-blue-600 text-white px-4 py-2 rounded text-center">{t('contactez-nous')}</Link></li>
           </ul>
           <button
             onClick={handleLocaleSwitch}
