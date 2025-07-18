@@ -66,7 +66,7 @@ export default function HomePage() {
       {/* Solutions Section */}
       <div className="text-left text-xl sm:text-2xl mt-6 sm:mt-8 ml-2 sm:ml-10">
         <h1 className="text-xl sm:text-3xl md:text-5xl text-slate-800 mb-2 sm:mb-3 leading-tight">
-          {t('homepage.solutions.title')} <span className="text-green-800">{t('homepage.solutions.highlight')}</span>
+          {t('homepage.solutions.title1')} <span className="text-green-800">{t('homepage.solutions.title2')}</span>
         </h1>
       </div>
 

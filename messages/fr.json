@@ -56,7 +56,8 @@
       "description": "Portés par la Transformation Digitale, la Formation et l’Inclusion Numérique, nous construisons un avenir où la technologie devient un levier d’émancipation pour tous."
     },
     "solutions": {
-      "title": "Nos Solutions",
+      "title1": "Nos",
+      "title2": "Approches",
       "cards": [
         {
           "title": "Formation",
