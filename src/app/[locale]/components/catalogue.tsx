@@ -12,7 +12,7 @@ const Catalogue = ({title, description, image, detailsLink }: CatalogueProps) =>
     return (
         <div className="flex flex-col items-center justify-center min-h-screen">
             <div className="border border-gray-400 rounded-md w-70 overflow-hidden shadow-md">
-                {/* Image section without background, image fills the area */}
+                {/* Image section */}
                 <div className="relative w-full h-40">
                     <Image
                         src={image}
