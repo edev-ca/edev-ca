@@ -224,7 +224,7 @@ export default function ContactPage() {
             Merci pour votre message ! Nous vous répondrons très bientôt.
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> 
     </div>
   );
 }
