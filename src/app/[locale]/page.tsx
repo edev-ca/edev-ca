@@ -34,15 +34,15 @@ export default function HomePage() {
       {/* Hero Section */}
       <div className="flex flex-col ml-2 sm:ml-6 md:ml-10">
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-slate-800 mb-4 sm:mb-6 leading-tight">
-          {t('homepage.hero.title')} <span className="text-blue-800">{t('homepage.hero.title1')}</span><br />
-          {t('homepage.hero.subtitle')}
+          {t('homepage.hero.title1')} <span className="text-blue-800">{t('homepage.hero.title2')}</span><br />
+          {t('homepage.hero.title3')}
         </h1>
         <p className="text-slate-900 text-sm sm:text-base md:text-lg max-w-2xl text-left mt-2 sm:mt-3">
           {t('homepage.hero.description')}
         </p>
 
         <button onClick={handleScroll} className="inline-flex items-center mt-6 sm:mt-8 text-blue-800 p-2 sm:p-4 text-base sm:text-lg">
-          <FaArrowDown className="mr-2 h-4 w-4" /> {t('homepage.hero.cta')}
+          <FaArrowDown className="mr-2 h-4 w-4" /> {t('homepage.hero.button')}
         </button>
       </div>
 
@@ -52,9 +52,9 @@ export default function HomePage() {
           {t('homepage.fondements.title')}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mt-6 sm:mt-10">
-          <ValueCard imageValue="/images/opportunnity.jpg" descriptionValue={t('homepage.fondements.cards.0')} />
-          <ValueCard imageValue="/images/formation.jpg" descriptionValue={t('homepage.fondements.cards.1')} />
-          <ValueCard imageValue="/images/formation2.jpg" descriptionValue={t('homepage.fondements.cards.2')} />
+          <ValueCard imageValue="/images/opportunnity.jpg" descriptionValue={t('homepage.fondements.items.0')} />
+          <ValueCard imageValue="/images/formation.jpg" descriptionValue={t('homepage.fondements.items.1')} />
+          <ValueCard imageValue="/images/formation2.jpg" descriptionValue={t('homepage.fondements.items.2')} />
         </div>
         <div className="mt-4 sm:mt-5 ml-2 sm:ml-10">
           <p className="text-slate-900 text-base sm:text-lg max-w-2xl text-left mt-4 sm:mt-8">
