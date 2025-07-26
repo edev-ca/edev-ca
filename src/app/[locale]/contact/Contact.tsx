@@ -66,7 +66,7 @@ export default function ContactPage() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-xl sm:text-5xl py-2 font-light text-slate-800 text-center mb-12"
+        className="text-xl sm:text-5xl py-8 font-light text-slate-800 text-center mb-12"
       >
         Discutons de votre prochain <br /> projet
       </motion.h1>
